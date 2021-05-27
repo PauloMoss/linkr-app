@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react';
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { IoHeartSharp, IoHeartOutline } from "react-icons/io5";
 import { BsTrash } from 'react-icons/bs';
 import { BsPencil } from 'react-icons/bs';
@@ -11,8 +11,11 @@ import UserContext from '../../contexts/UserContext'
 import { SinglePost, Profile, PostContent, CreatorName, Description, LinkContainer, LinkInfo, LinkImg, Hashtag } from "./Styles";
 
 export default function Post({ postDetails, setArrayOfPosts}) {
+
+
     const { userProfile } = useContext(UserContext);
     const { token } = userProfile
+    const location = useLocation().pathname;
     const[postLiked, setPostLiked] = useState(false)
     const { text, link, linkTitle, linkDescription, linkImage, user, likes } = postDetails;
     const { username, avatar } = user;
@@ -42,7 +45,12 @@ export default function Post({ postDetails, setArrayOfPosts}) {
 
     function getPost(){
         const config ={ headers: { Authorization: `Bearer ${token}` }}
-        const request = axios.get('https://mock-api.bootcamp.respondeai.com.br/api/v2/linkr/posts', config);
+        let request;
+        if(location === "/timeline") {
+            request = axios.get('https://mock-api.bootcamp.respondeai.com.br/api/v2/linkr/posts', config);
+        } else {
+            request = axios.get(`https://mock-api.bootcamp.respondeai.com.br/api/v2/linkr/users/${userProfile.user.id}/posts`, config);
+        }
         request.then(response => {
             setArrayOfPosts(response.data.posts)
         });
@@ -54,7 +62,6 @@ export default function Post({ postDetails, setArrayOfPosts}) {
         setModalIsOpen(!modalIsOpen);
         alert(`Sorry, we couln't delete your post`);
     }
-
 
     return(
         <SinglePost>
