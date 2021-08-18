@@ -24,7 +24,6 @@ export default function MyPosts() {
   useEffect(() => {
     const config = { headers: { Authorization: `Bearer ${userProfile.token}` } };
     callServer(setMyPostsList, pageUrl, erroAlert, config);
-    // eslint-disable-next-line
   }, []);
 
   return (
