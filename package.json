@@ -25,6 +25,8 @@
     "styled-components": "^5.3.0"
   },
   "scripts": {
+    "git":"git add . && git commit -m",
+    "postgit": "git push --all",
     "start": "react-scripts start",
     "build": "CI='' react-scripts build",
     "test": "react-scripts test",
