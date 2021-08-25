@@ -16,6 +16,8 @@ This is an web application with which lots of people can share and access intere
 - Repost something you liked
 - See the location from where the post were done, if allowed
 
+Try it out now at https://linkr-app.vercel.app/
+
 ## Technologies
 
 The following tools and frameworks were used in the construction of the project:
