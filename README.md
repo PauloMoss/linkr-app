@@ -35,7 +35,9 @@ The following tools and frameworks were used in the construction of the project:
 ```
 npm i
 ```
-3 - Set Environment variables acording .env.example file. As BASE_URL you can use https://mock-api.bootcamp.respondeai.com.br/api/v2/linkr </br>
+3 - Set Environment variables acording .env.example file </br>
+- As BASE_URL you can use https://mock-api.bootcamp.respondeai.com.br/api/v2/linkr </br>
+- You can use your own GOOGLE_API_KEY </br>
 4 - Run the front-end with </br>
 ```
 npm start
