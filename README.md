@@ -35,12 +35,12 @@ The following tools and frameworks were used in the construction of the project:
 ```
 npm i
 ```
-3 - Run the front-end with </br>
+3 - Set Environment variables acording .env.example file. As BASE_URL you can use https://mock-api.bootcamp.respondeai.com.br/api/v2/linkr </br>
+4 - Run the front-end with </br>
 ```
 npm start
 ```
-4 - You can optionally build the project running </br>
+5 - You can optionally build the project running </br>
 ```
 npm run build
 ```
-5 - Finally access http://localhost:3000 on your favorite browser (unless it is Internet Explorer. In this case, review your life decisions)
