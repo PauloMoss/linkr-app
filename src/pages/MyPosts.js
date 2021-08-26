@@ -36,6 +36,7 @@ export default function MyPosts() {
         morePostsToLoad={morePostsToLoad}
         setMorePostsToLoad={setMorePostsToLoad}
         url={urlToGetMorePosts}
+        pageUrl={pageUrl}
       />
     )
   );
