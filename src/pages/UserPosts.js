@@ -72,6 +72,7 @@ export default function UserPosts() {
         morePostsToLoad={morePostsToLoad}
         setMorePostsToLoad={setMorePostsToLoad}
         url={urlToGetMorePosts}
+        pageUrl={pageUrl}
       />
     )
   );
