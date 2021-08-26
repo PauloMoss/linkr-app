@@ -2,6 +2,8 @@
 
 An app to share interesting links with your friend and see what people are posting. Use it to see videos, web site links, trendings hashtags and comment your opinon on each post.
 
+<img src= "src/assets/images/Peek 25-08-2021 22-12.gif" />
+
 ## About
 
 This is an web application with which lots of people can share and access interesting links. Below are the implemented features:
