@@ -2,7 +2,7 @@
 
 An app to share interesting links with your friend and see what people are posting. Use it to see videos, web site links, trendings hashtags and comment your opinon on each post.
 
-<img src= "src/assets/images/Peek 25-08-2021 22-12.gif" />
+<img src= "src/assets/images/Peek 06-09-2021 16-02.gif" />
 
 ## About
 
