@@ -65,7 +65,7 @@ export default function Login() {
             value={password}
             disabled={isDisabled}
           />
-          <Button disabled={isDisabled}>Sign Up</Button>
+          <Button disabled={isDisabled}>Sign In</Button>
         </FormContainer>
         <Link to={"/sign-up"}>
           <p>First time? Create an account!</p>
