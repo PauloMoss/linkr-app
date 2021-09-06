@@ -41,6 +41,7 @@ export default function HashtagPosts() {
         morePostsToLoad={morePostsToLoad}
         setMorePostsToLoad={setMorePostsToLoad}
         url={urlToGetMorePosts}
+        pageUrl={pageUrl}
       />
     )
   );

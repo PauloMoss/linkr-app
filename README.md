@@ -2,6 +2,8 @@
 
 An app to share interesting links with your friend and see what people are posting. Use it to see videos, web site links, trendings hashtags and comment your opinon on each post.
 
+<img src= "src/assets/images/Peek 25-08-2021 22-12.gif" />
+
 ## About
 
 This is an web application with which lots of people can share and access interesting links. Below are the implemented features:
@@ -15,6 +17,8 @@ This is an web application with which lots of people can share and access intere
 - Like a post and see who else liked it
 - Repost something you liked
 - See the location from where the post were done, if allowed
+
+Try it out now at https://linkr-app.vercel.app/
 
 ## Technologies
 
@@ -31,12 +35,15 @@ The following tools and frameworks were used in the construction of the project:
 ```
 npm i
 ```
-3 - Run the front-end with </br>
+3 - Set Environment variables acording .env.example file </br>
+- As BASE_URL you can use https://mock-api.bootcamp.respondeai.com.br/api/v2/linkr </br>
+- You can use your own GOOGLE_API_KEY </br>
+
+4 - Run the front-end with </br>
 ```
 npm start
 ```
-4 - You can optionally build the project running </br>
+5 - You can optionally build the project running </br>
 ```
 npm run build
 ```
-5 - Finally access http://localhost:3000 on your favorite browser (unless it is Internet Explorer. In this case, review your life decisions)

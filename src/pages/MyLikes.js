@@ -34,6 +34,7 @@ export default function MyLikes() {
         morePostsToLoad={morePostsToLoad}
         setMorePostsToLoad={setMorePostsToLoad}
         url={urlToGetMorePosts}
+        pageUrl={pageUrl}
       />
     )
   );
